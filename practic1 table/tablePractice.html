@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>practice table elements</title>
+    <style media="screen">
+        .span{background-color:lightblue}
+        .cols{background-color: lightgreen}
+        .rows{background-color: lightyellow}
+        .table{border-spacing: 10px 10px}
+      .thead{color: red}
+      .tbody{color: green}
+      .tfoot{color: blue}
+      td{text-align: center;}
+      .subject{background-color: lightblue }
+      .score{background-color: lightyellow}
+      .average{background-color: lightgreen}
+    </style>
+
+  </head>
+  <body>
+    <table border="1">
+      <caption>과목별 성적</caption>
+      <tr>
+        <th>class name</th>
+        <th>mid-term</th>
+        <th>final</th>
+      </tr>
+      <tr>
+        <td>HTML web programming</td>
+        <td>30</td>
+        <td>66</td>
+      </tr>
+      <tr>
+        <td>Algorithm</td>
+        <td>28</td>
+        <td>70</td>
+      </tr>
+    </table>
+    <hr><br><br>
+    <table border="1">
+      <caption>3x4 table</caption>
+      <tr>
+        <td>1-1</td><td>1-2</td><td>1-3</td><td>1-4</td>
+      </tr>
+      <tr>
+        <td>2-1</td><td>2-2</td><td>2-3</td><td>2-4</td>
+      </tr>
+      <tr>
+        <td>3-1</td><td>3-2</td><td>3-3</td><td>3-4</td>
+      </tr>
+
+    </table>
+    <hr>
+    <table border="1">
+      <caption>merging colums</caption>
+      <tr>
+        <td colspan="4" class="span">1-1 ~ 1-4</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="span">2-1 ~ 2-2</td><td>2-3</td><td>2-4</td>
+      </tr>
+      <tr>
+        <td>3-1</td><td>3-2</td>
+        <td colspan="2" class="span">3-3 ~ 3-4</td>
+      </tr>
+    </table>
+    <hr>
+    <table border="1">
+      <caption>mering rows</caption>
+      <tr>
+        <td rowspan="3" class="span">1-1 <br>2-1 <br>3-1 </td>
+        <td>1-2</td><td>1-3</td>
+        <td rowspan="2" class="span">1-4 <br>2-4 </td>
+      </tr>
+      <tr>
+        <td>2-2</td>
+        <td rowspan="2" class="span">2-3 <br>3-3 </td>
+      </tr>
+      <tr>
+        <td>3-2</td><td>3-4</td>
+      </tr>
+    </table>
+      <hr>
+      <br>
+      <br>
+      <table border="1">
+        <tr>
+          <td colspan="4" class="cols">1-1 ~ 1-4</td>
+
+        </tr>
+        <tr>
+          <td rowspan="2" class="rows">2-1 <br>3-1 </td>
+          <td rowspan="2" class="rows">2-2 <br>3-2 </td>
+          <td>2-3</td><td>2-4</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="cols">3-3 ~ 3-4</td>
+        </tr>
+      </table>
+      <hr>
+      <table class="table">
+        <tr>
+          <td>
+          my favorite fruits
+        <ul>
+          <li>bananas</li>
+          <li>grapefruits</li>
+          <li>apples</li>
+        </ul> </td>
+          <td> an image
+        <br>
+        <img src="logo.png" alt="this is an image" width="150" height="100/">
+        </td>
+        </tr>
+        <tr>
+          <td>phone number <br>
+          010-1234-5678 </td>
+          <td>
+            classes
+            <table border="1">
+            <tr>
+              <td>HTML</td> <td>Algorithm</td>
+            </tr>
+            <tr>
+              <td>Data structure</td> <td>Linear Algebra</td>
+            </tr>
+          </table> </td>
+        </tr>
+      </table>
+      <hr>
+      <table border="1">
+        <caption>score</caption>
+        <thead>
+          <tr>
+            <th>class name</th> <th>score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Korea</td><td>90</td>
+          </tr>
+          <tr>
+            <td>English</td><td>95</td>
+          </tr>
+          <tr>
+            <td>Math</td><td>85</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>average</td><td>90</td>
+          </tr>
+        </tfoot>
+      </table>
+      <hr>
+      <br>
+      <table border="1">
+        <caption>score</caption><!-- table name -->
+        <!-- applying style to colums  -->
+        <colgroup>
+          <col class="subject">
+          <col span="2"class="score"> <!-- use span for col tag -->
+          <col class="average">
+        </colgroup>
+        <tr>
+          <th>subject</th><th>mid-term</th><th>final</th><th>average</th>
+        </tr>
+        <tr>
+          <td>Korean</td><td>90</td><td>95</td><td>92.5</td>
+        </tr>
+        <tr>
+          <td>English</td><td>96</td><td>90</td><td>93.5</td>
+        </tr>
+        <tr>
+          <td>Math</td><td>85</td><td>95</td><td>90.0</td>
+        </tr>
+      </table>
+
+
+  </body>
+</html>
