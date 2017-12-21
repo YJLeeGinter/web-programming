@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>represeting audio and video</title>
+  </head>
+  <body>
+    <!-- autio and video in previous html. It used plug-in for audio and video -->
+    Audio: <br>
+    <embed src="cat_growling_and_meowing.mp3" type="audio/mpeg">
+      <br><br>
+    Video: <br>
+    <embed src="camila.mp4" width="400" height="300" type="video/mp4">
+      <!-- Now practice audio tag which does not need plug-in for playing Audio
+    and video -->
+    <hr>
+    Audio: <br><br>
+    <audio src="cat_growling_and_meowing.mp3#t=10,20" controls autoplay loop>
+    This browser does not provide audio element.
+    </audio>
+    <br>
+    <hr>
+    Audio : <br><br>
+    <audio controls>
+      <source src="cat_growling_and_meowing.ogg" type="audio/ogg">
+        <source src="cat_growling_and_meowing.wav" type="audio/wav">
+          <source src="cat_growling_and_meowing.mp3" type="audio/mp3">
+            This brower does not provide audio element.
+    </audio>
+    <br><br>
+    <hr>
+    Video: <br><br>
+    <video src="camila.mp4" controls width="400" height="300" poster="logo.png">
+      <track src="video_track.vtt" kind="subtitles"srclang="ko"
+      label="예제 자막표시" default> <!-- this track element is compatible with internet explorer -->
+      This browser does not provide video element.
+    </video>
+    <br><br>
+    <hr>
+    Video: <br><br>
+    <video controls>
+      <source src="camila.ogv" type="video/ogg">
+        <source src="camila.webm" type="video/webm">
+          <source src="camila.mp4" type="video/mp4">
+      This browser does not provide video element.
+    </video>
+  </body>
+</html>
