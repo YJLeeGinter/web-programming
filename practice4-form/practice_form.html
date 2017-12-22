@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="login.jsp" name="loginfrm" method="post" autocomplete="on">
+      <!-- name is for sending date to server -->
+      ID: <input type="text" name="id" autofocus ><br><br>
+      Password: <input type="password" name="pwd" size="10"><br><br>
+      Nickname: <input type="text" name="nickname" autocomplete="off"><br><br>
+      Phone number: <input type="text" name="tel1" size="3"
+      maxlength="3 "value="010">
+      -<input type="text" name="tel2" size="4" maxlength="4">
+      -<input type="text" name="tel3" size="4" maxlength="4">
+      <br><br>
+      Date of birth: <input type="text" name="bod"
+      placeholder="YYYY-MM-DD" disabled><br><br>
+
+      <hr>
+      <h3>Radio button</h3>
+
+      <p>Gender:&nbsp; &nbsp;
+      <input type="radio" name="gender" value="male" checked>male
+       <input type="radio" name="gender"  value="female">female
+      </p>
+
+      Grade:&nbsp; &nbsp;
+      <input type="radio" name="grade" value="1">1
+      <input type="radio" name="grade" value="2">2
+      <input type="radio" name="grade" value="3">3
+      <input type="radio" name="grade" value="4">4
+      <hr>
+
+      <h3>Check Box</h3>
+      Select as many subjects as you want. <br><br>&nbsp;&nbsp;
+      <input type="checkbox" name="subject" value="HTML" checked>html
+      <input type="checkbox" name="subject" value="discrete_math">Disecrete Mathmatics
+      <input type="checkbox" name="subject" value="dataStruc">Data Structure
+      <input type="checkbox" name="subject" value="Algorithm">Algorithm
+      <br><br>
+      <hr>
+
+      <h3>File select button and image button</h3>
+    <!--   <form enctype="multipart/form-data">
+        <input type="file" accept="image/*" multiple><br><br>
+        <input type="image" src="logo.png" width="100" height="100" alt="submit button">
+      </form> -->
+      <hr>
+
+      <h3>a button by input tag</h3>
+      <input type="button" value="Click this!" onclick="alert('hello!')">
+      <br><hr>
+      <h3>buttons by button tag</h3>
+      <button type="button">Click this!</button> &nbsp; &nbsp;
+      <button type="button"> <img src="logo.png" width="50" > </button>
+      <br><hr>
+
+      <h3>serch and tel</h3>
+      search:
+      <input type="search" name="search" value="HTML"><br><br>
+      tel: <!-- pattern is for internet explorer -->
+      <input type="tel" name="phone" pattern="^0\d{1,2}\-\d{3,4}\-\d{4}$" required title="0??-????-????">
+      <br><br>
+      <hr>
+
+      <h3>URL: , e-mail address</h3>
+      URL:
+      <input type="url" name="url" placeholder="http://www.knou.ac.kr">
+      <br><br>
+      e-mail address:
+      <input type="email" name="email" multiple>
+      <hr>
+
+      <h3>enter number, range</h3>
+      nurber type:
+      <input type="number" min="1" max="10" step="0.5" value="1">
+      <br><br>
+      range type:
+      <input type="range" min="0" max="100" step="5" value="50">
+      <br><br>
+      <hr>
+
+      <h3>date, month, week, time, datetime-local</h3>
+      <p> Enter year, month, date:
+        <input type="date" name="date" min="2017-12-23" max="2018-06-06">
+      </p>
+      <p>Enter year and month: <input type="month" name="month"> </p>
+      <p>Enter yaer and week: <input type="week" name="week"> </p>
+      <p>Enter time: <input type="time" name="time" step="10" value="16:00:00"> </p>
+      <p>Enter year, month, date and time(datetime-local): <input type="datetime-local"
+        name="datetime-local" value="2017-12-23T16:00:00"> </p>
+        <br><hr>
+        <h3>Select color: </h3>
+        <input type="color" name="" value="">
+        <br><br>
+      <hr>
+
+      <h3>textarea tag</h3>
+      <textarea name="textarea2" rows="5" cols="30" autofocus>
+      textarea tag
+      - enter more than one line.
+      - attribute of rows and cols : size of the area
+      - name, wrap, readonly attribute
+      - attribute of input tag can be used, too.
+      </textarea><br><br>
+
+      <hr>
+      <h3>select tag</h3>
+      subjects <br>
+      <select name="subject3" size="1">
+        <option value="ds">Data Structure</option>
+        <option value="html" selected>HTML</option>
+        <option value="pl">Programming Language</option>
+        <option value="db">Database</option>
+        <option value="os" disabled>Operating System</option>
+        <option value="algo">Algorithm</option>
+      </select>
+
+      <hr>
+      <select name="subject3" multiple size="6">
+        <option value="ds">Data Structure</option>
+        <option value="html" selected>HTML</option>
+        <option value="pl">Programming Language</option>
+        <option value="db">Database</option>
+        <option value="os" disabled>Operating System</option>
+        <option value="algo">Algorithm</option>
+      </select>
+
+    <hr>
+    <h3>datalist tag</h3>
+    <p>Web browser:
+      <input type="text" list="browsers">
+    </p>
+    <datalist id="browsers">
+      <option value="Internet Explorer" label="IE"></option>
+      <option value="Firefox" label="Firefox"></option>
+      <option value="Chrome"></option>
+      <option value="Opera"></option>
+      <option value="Safari" disabled></option>
+    </datalist>
+    <br><br>
+    <hr>
+
+    <h3>Select tag & optgroup tag</h3>
+    <select name="subject4" size="1">
+      <optgroup label="2nd grade">
+        <option value="ds">Data Structure</option>
+        <option value="html" selected>HTML</option>
+        <option value="pl">Programming Language</option>
+      </optgroup>
+      <optgroup label="3rd grade">
+        <option value="db">Database</option>
+        <option value="os" disabled>Operating System</option>
+        <option value="algo">Algorithm</option>
+      </optgroup>
+    </select>
+    <br><br>
+    <hr>
+
+    <h3>fieldset, legend and label tag</h3>
+    <p><label> ID :<input type="text" name="id" value="knou"> </label> </p>
+    <p> <label> Password: <input type="password" name="pwd" > </label> </p>
+    <!-- label tag does not have a visual effect above. -->
+    <fieldset>
+      <legend>type of pet</legend>
+      <label for="cat">cat</label>
+      <input type="radio" id="cat" name="typeOfpet" value="cat" checked>
+      <label for="dog">dog</label>
+      <input type="radio" id="dog" name="typeOfpet" value="dog"><br>
+    </fieldset>
+      <h3>submit button and reset button</h3>
+      <input type="submit" value="submit"> &nbsp; &nbsp;
+      <input type="reset" value="reset">
+
+    </form>
+
+  </body>
+</html>
