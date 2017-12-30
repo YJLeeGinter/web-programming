@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Embeded style</title>
+<style media="screen">
+div li{font-weight: bold; color: red;}
+p > em{font-size: 15pt; color: blue; font-weight: bold;}
+h1 + p{background-color: cyan;}
+li.style1 ~ li{background-color: yellow;}
+h1,p{font-style: italic;; font-family: cursive;}
+</style>
+  </head>
+
+  <body>
+<div class="">
+  <h1>css combinators</h1>
+  <p>Let's practice <em>css combinators</em> </p>
+  <ul>
+    <li>자손 결합자 : 선택자1 공백 선택자2</li>
+    <li class="style1">자식 결합자: 선택자1 &gt; 선택자2</li>
+    <li>인접 형제 결합자: 선택자1 + 선택자2</li>
+    <li>일반 형제 결합자: 선택자1 ~ 선택자2</li>
+    <li>그룹 결합자: 선택자1, 선택자2, ...</li>
+  </ul>
+  <p>Check out different results by using different combinators!</p>
+</div>
+  </body>
+</html>
