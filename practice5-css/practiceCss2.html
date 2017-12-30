@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Embeded style</title>
+<style media="screen">
+  /*  *{color : green} apply this css to all element in html */
+  ul{color: red; font-style: italic;}
+  p.class1{font-size: 20pt; color: red;}
+  p.class2{font-size: 20pt; color: blue;}
+  p.class3{font-size: 20pt; color: green;}
+  .header{font-size: 20pt; }
+  .class4{ font-style: italic; color: pink;}
+  #style1{font-size: 15pt; color: cyan;}
+  p#style2{font-size: 20pt; color: yellow;}
+  input[type]{font-size: 20pt; color: magenta;}
+  input[type="text"]{background-color:  yellow;}
+  input[type="password"]{background-color: cyan;}
+  a{font-weight: bold; font-size: 20pt;}
+  a[title]{color: black;}
+  a[title="daum"]{color: red;}
+  a[title~="cyworld"]{color: blue;}
+  a[title|="google"]{color: green;}
+  a[title^="face"]{color:brown;}
+  a[title$="ter"]{color:pink;}
+  a[title*="utu"]{color: olive;}
+</style>
+  </head>
+  <body>
+<ul>
+  <li>list item1</li>
+  <li>list item2</li>
+  <li>list item3</li>
+</ul>
+<p class="class1"> same element but different style</p>
+<p class="class2"> same element but different style</p>
+<p class="class3"> same element but different style</p>
+<h3 class="class4 header"> different element but same style</h3>
+<p class="class4"> different element but same style</p>
+<div class="class4"> different element but same style</div>
+<hr>
+<div id="style1">
+  apply ID selector #style to div element
+<p id="style2">apply ID selector p#style2 to p element</p>
+<p>You can use ID once only to one element. </p>
+  </div>
+  <hr>
+<form class="" action="index.html" method="post">
+  ID: <input type="text" name="" value="">
+  Password: <input type="password" name="" value="">
+</form>
+<hr>
+<a href="http://www.naver.com" title="naver">naver</a><br>
+<a href="http://www.daum.net" title="daum">daum</a><br>
+<a href="http://www.nate.com" title="nate cyworld">nate</a><br>
+<a href="http://translate.google.co.kr" title="google-translate">google translatation</a><br>
+<a href="http://www.facebook.com" title="facebook">facebook</a><br>
+<a href="http://www.twitter.com" title="twitter">twitter</a><br>
+<a href="http://www.youtube.com" title="youtube">youtube</a><br>
+  </body>
+</html>
