@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Let's practice Box</title>
+    <style media="screen">
+      div{font-size: 14pt; border: solid; background-color: yellow;}
+      .margin1{margin: 20px 40px 30px 30px}
+      .margin2{margin: 60px 50px 60px 50px}
+
+      span{background-color: red;}
+      .padding1{ padding-top: 5%; padding-right: 10%; padding-bottom: 15%;
+                padding-left: 20%;}
+      .padding2{ padding: 20px 40px 5px 10px}
+      .padding3{padding: 5%;}
+
+      .style1{width: 40%;   background-color: cyan;}
+      .style2{height: 100px; background-color: orange;}
+      .style3{width: 100px; height: 50px; background-color: blue;}
+      .style4{width: 600px; height: 15px; background-color: brown;}
+    </style>
+  </head>
+  <body>
+    <!-- when two margins are adjacent, the bigger margin takes precedence. -->
+<div class="margin1">margin(마진) 지정</div>
+<div class="margin2">margin(마진) 지정 </div><hr>
+
+<div class="padding1">
+<span>adjusting padding box1</span>
+</div><br>
+<div class="padding2">
+  <span>adjusting padding box2</span>
+</div><br>
+<div class="padding3">
+  <span>adjusting padding box3</span>
+</div>
+<br><hr>
+<p class="style1">adjusting width and height of the content1</p>
+<div class="style2">
+  adjusting width and heightof the content2
+</div>
+<input class="style3" type="button" name="" value="button"><br><br>
+<hr class="style4">
+  </body>
+</html>
