@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Let's practice Box</title>
+    <style media="screen">
+    div{font-size: 12pt; border: solid; background-color: pink;}
+    div.min{height: auto; width: auto; min-width: 400px; min-height: 30px;}
+    div.max{height: auto; width: auto; max-width: 150px; max-height: 80px;}
+    span{font-weight: bolder;}
+    .valign1{vertical-align: baseline;}
+    .valign2{vertical-align: sub;}
+    .valign3{vertical-align: super;}
+    .valign4{vertical-align: top;}
+    .valign5{vertical-align: middle;}
+    .valign6{vertical-align: bottom;}
+    .valign7{vertical-align: text-top;}
+    .valign8{vertical-align: text-bottom;}
+    .valign9{vertical-align: 10pt;}
+    .valign10{vertical-align: -10pt;}
+
+    div.block{width: 350px; height: 150px; border: 1px solid black; position: relative;
+    top: 30px; left: 30px;}
+    div.myDIV{width: 200px; border: 1px solid red; background-color: yellow;
+    position: relative; top: 20px; right: 35px;}
+
+    </style>
+  </head>
+  <body>
+<div class="">
+  min-width, min-height, max-width, max-height are attributes that can adjust minmum
+  or maximum width and height of certain elements.
+</div> <br><br>
+<div class="min">
+  min-width, min-height, max-width, max-height are attributes that can adjust minmum
+  or maximum width and height of certain elements.
+</div><br><br>
+<div class="max">
+  min-width, min-height, max-width, max-height are attributes that can adjust minmum
+  or maximum width and height of certain elements.
+</div>
+<br><br><hr>
+<p>Let me try <span class="valign1">baseline</span> vertical-align! </p>
+<p>Let me try <span class="valign2">sub</span> vertical-align! </p>
+<p>Let me try <span class="valign3">super</span> vertical-align! </p>
+<p>Let me try <img src="logo.png" class="valign4" height="70" alt=""> vertical-align: top! </p>
+<p>Let me try <img src="logo.png" class="valign5" height="70" alt=""> vertical-align: middle! </p>
+<p>Let me try <img src="logo.png" class="valign6" height="70" alt=""> vertical-align: bottom! </p>
+<p>Let me try <img src="logo.png" class="valign7" height="70" alt=""> vertical-align: text-top! </p>
+<p>Let me try <img src="logo.png" class="valign8" height="70" alt=""> vertical-align: text-bottom! </p>
+<p>Let me try <span class="valign9">10pt</span> vertical-align! </p>
+<p>Let me try <span class="valign10">-10pt</span> vertical-align! </p>
+<br><hr>
+<div class="block">
+  <div class="myDIV">
+adjust the location of an element by using some attributes of top, right, bottom and left.
+  </div>
+</div>
+
+  </body>
+</html>
