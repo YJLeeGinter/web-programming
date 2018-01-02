@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Let's practice CSS</title>
+    <style media="screen">
+    body{background-color: skyblue; }
+    .color1{background-color: hsla(240, 100%, 50%, 0.3)}
+    .color2{background-color: rgb(255,0,0)}
+    .color3{background-color: yellow}
+    .color4{background-color: transparent}
+
+    div.background1{height: 250px; width: 250px; border: rgba(255, 0, 0, 0.2) 30px solid;
+    padding: 30PX; background-origin: content-box; background-clip: content-box;
+    background-image:  url(paw.jpg); background-repeat: space; background-size: 50px;
+    background-position: 25% 75%;  background-attachment: local;}
+
+    div.background2{padding: 30px; width: 300px; height: 200px;  border: rgba(100,100,100,0.5) solid 30px;
+    color: pink;
+    background: url(paw.jpg) left top /50% repeat padding-box padding-box scroll}
+
+    div.background3{width: 500px; height: 300px; border: rgba(100, 100, 100,0.2) solid 30px;
+    background: url(logo.png) 10% top /30px 30px no-repeat scroll,
+                url(paw.jpg) left top /30% space fixed;}
+    </style>
+  </head>
+  <body>
+    <h3 class="color1">setting up background-color</h3>
+    <p class="color2">background <span class="color3">color</span> is selected. </p>
+    <p class="color3">background <span class="color4">color</span> is selected. </p>
+    <div class="background1">
+<p>Hello!</p>
+<p>Hello!</p>
+<p>Hello!</p>
+<p>Hello!</p>
+<p>Hello!</p>
+    </div>
+    <br><br>
+    <div class="background2">
+      Practing background abbtributes in css. It is very fun!
+    </div>
+    <br><br>
+    <div class="background3">
+      Hello world! I am practicing background attributes in CSS.
+    </div>
+  </body>
+</html>
