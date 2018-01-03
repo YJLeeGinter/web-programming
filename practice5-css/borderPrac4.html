@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Let's practice CSS</title>
+    <style media="screen">
+    div{height: 40px; font-size: 16px; font-weight: bold; text-align: center;
+    border: 2px solid; padding: 20px; background-color: #dddddd;}
+    .radius1{ border-color: red; border-radius: 5px 20px 35px 50px}
+    .radius2{ border-color: blue; border-radius: 5% 15% 25% 35%}
+    .radius3{ border-color: green; border-radius: 10%}
+    .radius4{ border-color: pink; border-radius: 15px / 40px}
+    .box1{ float: left; margin: 15px; border-radius: 25px 0;}
+    .box2{ float: left; height: 50px; margin: 15px;
+       border-radius: 10px 15px 20px 25px;}
+    .shadow1{ box-shadow: 10px 10px blue}
+    .shadow2{ box-shadow: 10px 10px 10px blue}
+    .shadow3{ box-shadow: 10px 10px 10px 10px blue}
+    .shadow4{ box-shadow: 10px 15px red inset}
+    .shadow5{ box-shadow: 10px 15px 20px red inset}
+    .shadow6{ box-shadow: 10px 15px 20px 10px red inset}
+    </style>
+  </head>
+  <body>
+    <div class="radius1">
+      changing the corners of a box by using radius attributes. 5px 20px 35px 50px
+    </div> <br>
+    <div class="radius2">
+      changing the corners of a box by using radius attributes. 5% 15% 25% 35%
+    </div> <br>
+    <div class="radius3">
+      changing the corners of a box by using radius attributes.10%
+    </div><br>
+    <div class="radius4">
+      changing the corners of a box by using radius attributes. 15px / 40px
+    </div>
+    <br>
+    <div class="box1 shadow1">
+      box1 : shadow1
+    </div>
+    <div class="box1 shadow2">
+      box1 : shadow2
+    </div>
+    <div class="box1 shadow3">
+      box1 : shadow3
+    </div>
+    <div class="box2 shadow4">
+      box2 : shadow4
+    </div>
+    <div class="box2 shadow5">
+      box2 : shadow5
+    </div>
+    <div class="box2 shadow6">
+      box2 : shadow6
+    </div>
+
+  </body>
+</html>
