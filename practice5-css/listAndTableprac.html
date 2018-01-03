@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Let's practice CSS</title>
+    <style media="screen">
+    .none{list-style-type: none;}
+    .ul1{list-style-type: disc;}
+    .ul2{list-style-type: circle;}
+    .ul3{list-style-type: square;}
+
+    .ol1{list-style-type: decimal;}
+    .ol2{list-style-type: lower-roman;}
+    .ol3{list-style-type: upper-roman;}
+    .ol4{list-style-type: lower-alpha;}
+    .ol5{list-style-type: upper-alpha;}
+
+    .list1{
+      list-style-image: url(paw.jpg);
+      list-style-position: inside;
+    }
+    .list2
+    {
+      list-style: url(paw.jpg) outside;
+    }
+    .table1{ width: 300px; table-layout: auto; border-collapse: separate;
+    caption-side: top; border-spacing: 10px 10px; empty-cells: hide;}
+    .table2{ width: 300px; table-layout: fixed; border-collapse: collapse;
+    caption-side: bottom;}
+
+    </style>
+  </head>
+  <body>
+
+    unordered list
+    <ul>
+     <li class="none">none </li>
+     <li class="ul1"> dis</li>
+     <li class="ul2">circle</li>
+     <li class="ul3">square</li>
+    </ul>
+    <br>ordered list <br>
+    <ol>
+      <li class="ol1">decimal</li>
+      <li class="ol2">lower-roman</li>
+      <li class="ol3">upper-roman</li>
+      <li class="ol4">lower-alpha</li>
+      <li class="ol5">upper-alpha</li>
+    </ol>
+    <br>
+    list item default style type and position
+    <ul>
+      <li> list-style-type: disc(default)</li>
+      <li> list-style-position: outside(default)</li>
+    </ul><br>
+
+    image marker and position(inside)
+    <ul class="list1">
+      <li> list-style-image: url(paw.jpg)</li>
+      <li> list-style-position: inside</li>
+    </ul> <br>
+    image marker and position(outside)
+    <ul class="list2">
+      <li>list-style-image: url(paw.jpg)</li>
+      <li>list-style-position: outside</li>
+    </ul>
+    <br>
+    <table border="1">
+      <caption>basic table</caption>
+      <tr>
+        <td>HTML web programming</td> <td>CSS</td>
+      </tr>
+      <tr>
+        <td>Javascript</td><td></td>
+      </tr>
+    </table>
+    <br>
+    <table class="table1" border="1">
+      <caption>caption : auto seperate top 10</caption>
+      <tr>
+        <td>HTM web programming</td><td>CSS</td>
+      </tr>
+      <tr>
+        <td>Javascript</td><td></td>
+      </tr>
+    </table>
+    <br>
+    <table class="table2" border="1">
+      <caption>caption: fixed collapse bottom</caption>
+      <tr>
+        <td>HTML web programming</td><td>CSS</td>
+      </tr>
+      <tr>
+        <td>Javascript</td><td></td>
+      </tr>
+    </table>
+    <br>
+
+  </body>
+</html>
